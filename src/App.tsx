@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import { FC, useState } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import {
+  Board,
+  Header,
+  List
+} from 'components';
+
+const App : FC = () => {
+  const [selected, setSelected] = useState('');
+  
+  const list = ['item1', 'item2'];
+  
+  return(
+    <>
+      <Header title="Golden thougts"/>
+      <Board content={selected}/>
+      <List list={list} selectHandler={setSelected}/>
+    </>
+  )
+
 }
 
 export default App;
