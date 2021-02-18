@@ -3,8 +3,9 @@ import './App.css';
 
 import {
   Board,
+  List,
   Header,
-  List
+  Footer,
 } from 'components';
 
 const App : FC = () => {
@@ -22,6 +23,7 @@ const App : FC = () => {
       <Header title="Golden thougts"/>
       <Board content={selected}/>
       <List list={list} selectHandler={setSelected}/>
+      <Footer title="Footer"/>
     </>
   )
 

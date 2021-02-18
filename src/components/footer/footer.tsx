@@ -1,15 +1,15 @@
 import { FC } from 'react';
 
-type HeaderProps = {
+type FooterProps = {
     title: string;
-}
+};
 
-export const Header:FC<HeaderProps> = ({
+export const Footer:FC<FooterProps> = ({
     title,
     children
 }) => {
-    return <header>
+    return <footer>
         <h1>{title}</h1>
         {children}
-    </header>
+    </footer>
 }
