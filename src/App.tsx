@@ -10,7 +10,12 @@ import {
 const App : FC = () => {
   const [selected, setSelected] = useState('');
   
-  const list = ['item1', 'item2'];
+  const list = [
+    'To, że milczę, nie znaczy, że nie mam nic do powiedzenia.',
+    'Lepiej zaliczać się do niektórych, niż do wszystkich.',
+    'Czytanie książek to najpiękniejsza zabawa, jaką sobie ludzkość wymyśliła',
+    'Czytanie książek to najpiękniejsza zabawa, jaką sobie ludzkość wymyśliła'
+  ];
   
   return(
     <>
